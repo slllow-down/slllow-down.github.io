@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('fonts/PPNeueMontreal-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url('fonts/PPNeueMontreal-Bold.woff') format('woff');
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 12px;
+}
+.nav-item {
+  width: fit-content;
+  cursor: pointer;
+}
+body.dark-mode {
+  color: #EEE;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+body.light-mode, .bg-light {
+  color: #000;
+  background-image: linear-gradient(to left, #EEE 0%, #BBB 100%);
+}
+body.dark-mode {
+  color: #EEE;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+body > div > .main_frame {
+  border: 1px solid #000;
+}
+body.dark-mode > div > .main_frame {
+  border: 1px solid #eee;
+}
+.serif {
+  font-family: 'Merriweather', serif !important;
+}
+.sans-serif {
+  font-family: 'Montserrat', sans-serif !important;
+}
+.neue {
+  font-family: 'NeueMontreal' !important;
+}
+.main_frame {
+  max-width: 1280px;
+  min-height: 90vh;
+  position: relative;
+}
+.title {
+  font-size: 30px !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+}
+#lou {
+  background-image: url(images/lou.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 60px !important;
+  }
+  .main_frame {
+    min-height: 90vh;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 2300px){
+  .main_frame {
+    min-height: 60vh;
+  }
+}

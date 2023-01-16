@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mai.studio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Maddison Murphy | Software Engineer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ruby, UI/UX, Developer">
+    <meta name="author" content="Maddison Murphy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="dark-mode">
+    <div class="px-3 neue mt-3">
+      <div class="main_frame mx-auto" style="height: 80vh;">
+        <div class="mt-2 p-3">
+          <h1 class="title">
+            Maddison Murphy
+          </h1>
+          <p class="mb-0">Software Engineer | UI Developer</p>
+        </div>
+        <ul class="nav flex-column small">
+            <li class="nav-item">
+              <span id="nav-home" class="nav-link link d-none text-light active" >Home</span>
+            </li>
+            <li class="nav-item">
+              <span id="nav-work"class="nav-link link text-light">Work</span>
+            </li>
+            <li class="nav-item">
+              <span id="nav-contact" class="nav-link link text-light">Contact</span>
+            </li>
+            <li class="nav-item">
+              <span id="nav-lou" class="nav-link link text-light">Lou.jpg</span>
+            </li>
+          </ul>
+        <div id="home" class="mt-5 ms-auto col-6 col-md-3 text-end p-2">
+          <p>
+            I enjoy building thoughtful user interfaces to provide 
+            intuitive user experiences. I am not a designer, but I am 
+            a design fangirl.
+          </p>
+        </div>
+        <div id="work" class="d-none mt-2 mx-auto col-8 col-lg-4 text-center p-2">
+          <p>
+            I'm currently working at RG Nets, maintaining and building features for 
+            <a href="#" class="link text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            very cool software</a> written primarily in Ruby on Rails. 
+            My clients include AT&T, Lumen, and Four Seasons. 
+          </p>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 600px">
+            <div class="modal-content bg-dark">
+              <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex flex-row flex-wrap">
+                <img src="images/fleet-operator.png" class="mx-auto" style="max-width: 80%">
+                <img src="images/captive-portal.png" class="mx-auto mt-2" style="max-width: 80%">
+              </div>
+            </div>
+            </div>
+          </div>
+          <p>
+            I am a CWNP-certified Wireless Design Professional, Wireless IoT
+            Administrator, and Wireless Network Administrator. You can check 
+            my creds <a href="https://www.cwnp.com/cwnpVerification.php?cwnp_id=622108" target="_blank" class="link text-light">here</a>.
+          </p>
+          <p>
+            Before working full-time in tech, I ran a non-profit record label called Puppy
+            Teeth Records and made a series of compilation cassette tapes
+            that you can still listen to <a href="https://puppyteethrecords.bandcamp.com/" target="_blank" class="link text-light">
+            here.</a>
+          </p>
+        </div>
+        <div id="contact" class="d-none mt-5 col-6 col-md-4 col-lg-3 p-2">
+          <div class="d-flex flex-row">
+            <div class="text-end me-1"><i class="fa fa-envelope"></i></div>
+            <div><a href="mailto:hello@mai.studio" class="link text-light">hello@mai.studio</a> | </div>
+            <a href="https://www.linkedin.com/in/maddisonmurphy/" target="_blank" class="link text-light"><i class="fa-brands fa-linkedin my-auto mx-2"></i></a> | 
+            <a href="https://puppyteethrecords.bandcamp.com/" target="_blank" class="link text-light"><i class="fa-brands fa-bandcamp ms-2"></i></a>
+          </div>
+        </div>
+        <div id="lou" class="d-none mx-auto col-10 col-md-6 col-lg-4 p-2">
+        </div>
+        <div class="footer d-flex flex-row justify-content-between small p-2 w-100">
+            <p id="light" class="me-2 mb-0" style="cursor: pointer">Light</p>
+            <p class="mb-0 serif">< &#9786; ></p>
+            <p id="dark" class="ms-2 mb-0" style="cursor: pointer">Dark</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    $(() => {
+      $('#nav-home').on('click', function() {
+        $('#home').removeClass('d-none')
+        $('#work').addClass('d-none')
+        $('#contact').addClass('d-none')
+        $('#lou').addClass('d-none')
+        $('#nav-home').addClass('d-none')
+        $('#nav-work').removeClass('d-none')
+        $('#nav-contact').removeClass('d-none')
+        $('#nav-lou').removeClass('d-none')
+      })
+      $('#nav-work').on('click', function() {
+        $('#work').removeClass('d-none')
+        $('#home').addClass('d-none')
+        $('#contact').addClass('d-none')
+        $('#lou').addClass('d-none')
+        $('#nav-home').removeClass('d-none')
+        $('#nav-work').addClass('d-none')
+        $('#nav-contact').removeClass('d-none')
+        $('#nav-lou').removeClass('d-none')
+      })
+      $('#nav-contact').on('click', function() {
+        $('#contact').removeClass('d-none')
+        $('#work').addClass('d-none')
+        $('#home').addClass('d-none')
+        $('#lou').addClass('d-none')
+        $('#nav-home').removeClass('d-none')
+        $('#nav-work').removeClass('d-none')
+        $('#nav-contact').addClass('d-none')
+        $('#nav-lou').removeClass('d-none')
+      })
+      $('#nav-lou').on('click', function() {
+        $('#lou').removeClass('d-none')
+        $('#work').addClass('d-none')
+        $('#home').addClass('d-none')
+        $('#contact').addClass('d-none')
+        $('#nav-home').removeClass('d-none')
+        $('#nav-work').removeClass('d-none')
+        $('#nav-contact').removeClass('d-none')
+        $('#nav-lou').addClass('d-none')
+      })
+      $('#light').on('click', function() {
+        $('body').removeClass('dark-mode')
+        $('body').addClass('light-mode')
+        $('.link').removeClass('text-light')
+        $('.link').addClass('text-dark')
+        $('.modal-content').addClass('bg-light')
+        $('.modal-content').removeClass('bg-dark')
+        $('.btn-close').removeClass('btn-close-white')
+      })
+      $('#dark').on('click', function() {
+        $('body').addClass('dark-mode')
+        $('body').removeClass('light-mode')
+        $('.link').removeClass('text-dark')
+        $('.link').addClass('text-light')
+        $('.modal-content').removeClass('bg-light')
+        $('.modal-content').addClass('bg-dark')
+        $('.btn-close').addClass('btn-close-white')
+      })
+    })
+  </script>
+</html>
